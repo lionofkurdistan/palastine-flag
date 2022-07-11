@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>palastine-flag</title>
+  
+  
+</head>
+
+<body>
+  <script type="text/javascript">
+  /* body style */
+    let body = document.querySelector("body");
+    body.style.margin = "0";
+    
+    /* container */
+    let container = document.createElement("div");
+    container.style.width = "100%";
+    container.style.height = "100vh";
+    container.style.position = "relative";
+    body.appendChild(container);
+    
+    
+    /* black */
+    let black = document.createElement("div");
+    black.style.position = "absolute";
+    black.style.width = "100%";
+    black.style.height = "33.3333%";
+    black.style.backgroundColor = "black";
+    black.style.top = "0";
+    container.appendChild(black);
+    
+    
+    /* green */
+    let green = document.createElement("div");
+    green.style.position = "absolute";
+    green.style.width = "100%";
+    green.style.height = "33.3333%";
+    green.style.backgroundColor = "green";
+    green.style.bottom = "0";
+    container.appendChild(green);
+    
+    /* Red */
+    let red = document.createElement("div");
+    red.style.position = "absolute";
+    red.style.borderStyle = "solid";
+    red.style.borderColor = "transparent transparent transparent red";
+    red.style.borderWidth = "50vh";
+    container.appendChild(red);
+  </script>
+</body>
+</html>
